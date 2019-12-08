@@ -1,0 +1,24 @@
+.BigHeader {
+    color: #fff !important;
+    text-align: center;
+    background-color: #159957 !important;
+    background-image: linear-gradient(120deg, #155799, #159957) !important;
+}
+
+@media screen and (min-width: 64em) {
+    .BigHeader {
+        padding: 5rem 6rem;
+    } 
+}
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+    .BigHeader {
+        padding: 3rem 4rem;
+    }
+}
+
+@media screen and (max-width: 42em) {
+    .BigHeader {
+        padding: 2rem 1rem;
+    }
+}

@@ -1,0 +1,75 @@
+body
+{
+    background: #eeeeee;
+    text-align: center;
+}
+#body
+{
+    background: #ffffff;
+    text-align: left;
+    padding: 15px;
+    border: solid 1px #cccccc;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+.smallLink
+{
+    font-size: 0.8em;
+}
+.contentItem
+{
+    margin-left: 10px;
+}
+
+.titlename {
+    font-family: "Palatino Linotype", Palatino, "Times New Roman", Times, serif;
+    font-size: 18pt;
+}
+
+.latexsup {
+    /*font-family: "Times New Roman", Times, serif;*/
+    text-transform: uppercase;
+    font-size: 0.85em;
+    vertical-align: 0.15em;
+    margin-left: -0.36em;
+    margin-right: -0.15em;
+}
+
+.latexsub {
+    /*font-family: "Times New Roman", Times, serif;*/
+    text-transform: uppercase;
+    font-size: 1em;
+    vertical-align: -0.5ex;
+    margin-left: -0.1667em;
+    margin-right: -0.125em;
+}
+
+.latex {
+    font-family: "Palatino Linotype", Palatino, "Times New Roman", Times, serif;
+}
+
+.alignleft {
+    float: left;
+}
+.alignright {
+    float: right;
+}
+
+.btnCstm {
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
+
+.btnCstm:hover {
+    color: rgba(255, 255, 255, 0.8);
+    text-shadow: 0 0 5px #FFFFFF !important;
+}
+
+.tdyscourse {
+    min-width: 120px;
+}
+
+.tdwdcourse {
+    min-width: 300px;
+}
