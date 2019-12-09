@@ -96,7 +96,7 @@
                 <h2 style="color:#0066FF;text-shadow:3px 3px 1px #00FFFF" id="Welcome">Welcome to the IFEM_versatile webpage!</h2>
             </div-->
             <p id="Welcome"><big>
-                <font size="5" color="green">This page showcases some of my <i><b>past</b></i> research work on Finite Element Method (with focus on fluid dynamics and fluid-structure interaction), as well as optimization (operations research).</font>
+                <font size="5" color="green">This page showcases some of my academic research work on Finite Element Method (with focus on fluid dynamics and fluid-structure interaction), as well as optimization (operations research).</font>
             </big></p>
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -141,7 +141,7 @@
             <p><big>
                 I participated in the maintenance and development of IFEM_versatile, which is a scientific computing software aimed at solving fluid-structure interaction (FSI) problems. The core of the <a target="_blank" href="https://koenigwilhelm.github.io/IFEM_versatile">IFEM_versatile software</a> is the Immersed Finite Element Method technique, which is a unique approach to efficiently handle FSI; the software can function as a standalone finite element (FE) fluid solver as well. The source codes are written in FORTRAN with MPI (Message Passing Interface), and can be compiled and run on different platforms, e.g. Mac Pro (multiprocessor server) and IBM Blue Gene (supercomputer).
                 <br/><br/>
-                A few computation cases are demonstrated here to showcase my work. The examples are to display computations on FSI cases, CFD cases, and acoustics cases where non-reflective BCs are important.
+                A few computation cases are demonstrated here to showcase my work. The examples are to display computations on FSI cases, CFD cases, and acoustics cases where non-reflective Boundary Conditions are important.
             </big></p>
             <!-- Example 1 -->
             <h3 style="color:green" id="FSIvfAir">I. Fluid-Structure Interaction between Laryngeal Airflow and Vocal Folds</h3>
@@ -172,54 +172,22 @@
             <!-- Example 3 -->
             <h3 style="color:green">III. Acoustic Propagation with Proper Application of Perfectly Matched Layers (PML)</h3>
             <p><big>
-                These are various numerical simulations of acoustic wave propagation: the sound sources in the first two are initial pressure perturbation, while those in the second two are vibrating structures. In these cases, the simulation are extremely sensitive to the reflection effect from the boundaries of finite computational domain; therefore, Perfectly Matched Layers are applied to absorb outgoing waves.
+                These are various numerical simulations of acoustic wave propagation: the sound sources in the first two are vibrating structures, while those in the second two are initial pressure perturbation. In these cases, the simulation are extremely sensitive to the reflection effect from the boundaries of finite computational domain; therefore, Perfectly Matched Layers are applied to absorb outgoing waves.
             </big></p>
             <ul>
-                <li id="ICpresCentered">
-                    <h4 style="color:green">Initial pressure point source</h4>
-                    <p style="float: left; font-size: 12pt; text-align: left; width: 45%; margin-right: 1%; margin-bottom: 0.5em;">
-                        <img class="img-responsive center-block" src="./images/PointSource4PML.gif" width="auto" max-width="120%" alt="Acoustic wave absopted in PML">
-                        An initial pressure point source <i style="color: green"><b>with</b></i> PML; note that outgoing waves are absorbed in the PML near the domain boundaries.
-                        <img class="emoji" title=":thumbsup:" alt=":thumbsup:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png" height="20" width=" 20" align="absmiddle">
-                        <img class="emoji" title=":white_check_mark:" alt=":white_check_mark:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2705.png"  height="20" width="20" align="absmiddle">
-                    </p>
-                    <p style="float: left; font-size: 12pt; text-align: left; width: 45%; margin-right: 1%; margin-bottom: 0.5em;">
-                        <img class="img-responsive center-block" src="./images/PointSourceNoPMLComprsn.gif" width="auto" max-width="120%" alt="Acoustic field contaminated by spurious reflections from boundaries">
-                        An initial pressure point source <i style="color: red"><b>without</b></i> PML; note that the spurious reflections on the domain boundaries contaminated the pressure field.
-                        <img class="emoji" title=":red_circle:" alt=":red_circle:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f534.png" height="20"    width="20" align="absmiddle">
-                        <img class="emoji" title=":heavy_exclamation_mark:" alt=":heavy_exclamation_mark:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2757.png" height="20" width="20" align="absmiddle">
-                    </p>
-                    <p style="clear: both;">
-                </li>
-                <li id="ICpresOffCentered">
-                    <h4 style="color:green">Initial pressure point source, off-centered</h4>
-                    <p style="float: left; font-size: 12pt; text-align: left; width: 45%; margin-right: 1%; margin-bottom: 0.5em;">
-                        <img class="img-responsive center-block" src="./images/PointSource4PML2.gif" width="auto" max-width="120%" alt="Acoustic wave absopted in PML">
-                        An initial pressure point source <i style="color: green"><b>with</b></i> PML; note that outgoing waves are absorbed in the PML near the domain boundaries.
-                        <img class="emoji" title=":thumbsup:" alt=":thumbsup:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png" height="20" width=" 20" align="absmiddle">
-                        <img class="emoji" title=":white_check_mark:" alt=":white_check_mark:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2705.png"  height="20" width="20" align="absmiddle">
-                    </p>
-                    <p style="float: left; font-size: 12pt; text-align: left; width: 45%; margin-right: 1%; margin-bottom: 0.5em;">
-                        <img class="img-responsive center-block" src="./images/PointSourceNoPMLComprsn2.gif" width="auto" max-width="120%" alt="Acoustic field contaminated by spurious reflections from boundaries">
-                        An initial pressure point source <i style="color: red"><b>without</b></i> PML; note that the spurious reflections on the domain boundaries contaminated the pressure field.
-                        <img class="emoji" title=":red_circle:" alt=":red_circle:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f534.png" height="20"    width="20" align="absmiddle">
-                        <img class="emoji" title=":heavy_exclamation_mark:" alt=":heavy_exclamation_mark:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2757.png" height="20" width="20" align="absmiddle">
-                    </p>
-                    <p style="clear: both;">
-                </li>
                 <li id="LeftRightVibeSource">
-                    <h4 style="color:green">Left-right vibrating source</h4>
+                    <h4 style="color:green">Left-to-right vibrating source</h4>
                     <p style="float: left; font-size: 12pt; text-align: left; width: 45%; margin-right: 1%; margin-bottom: 0.5em;">
                         <img class="img-responsive center-block" src="./images/VibePML.gif" width="auto" max-width="120%" alt="Acoustic wave absopted in PML">
                         A vibrating source <i style="color:green"><b>with</b></i> PML; note that outgoing waves are absorbed in the PML near the domain boundaries.
-                        <img class="emoji" title=":thumbsup:" alt=":thumbsup:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png" height="20" width=" 20" align="absmiddle">
-                        <img class="emoji" title=":white_check_mark:" alt=":white_check_mark:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2705.png"    height="20" width="20" align="absmiddle">
+                        <!--img class="emoji" title=":thumbsup:" alt=":thumbsup:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png" height="20" width=" 20" align="absmiddle"-->
+                        <!--img class="emoji" title=":white_check_mark:" alt=":white_check_mark:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2705.png"    height="20" width="20" align="absmiddle"-->
                     </p>
                     <p style="float: left; font-size: 12pt; text-align: left; width: 45%; margin-right: 1%; margin-bottom: 0.5em;">
                         <img class="img-responsive center-block" src="./images/VibeNoPMLComprsn.gif" width="auto" max-width="120%" alt="Acoustic field contaminated by spurious reflections from boundaries">
                         A vibrating source <i style="color:red"><b>without</b></i> PML; note that the spurious reflections on the domain boundaries contaminated the pressure field.
-                        <img class="emoji" title=":red_circle:" alt=":red_circle:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f534.png" height="20"    width="20" align="absmiddle">
-                        <img class="emoji" title=":heavy_exclamation_mark:" alt=":heavy_exclamation_mark:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2757.png" height="20" width="20" align="absmiddle">
+                        <!--img class="emoji" title=":red_circle:" alt=":red_circle:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f534.png" height="20"    width="20" align="absmiddle"-->
+                        <!--img class="emoji" title=":heavy_exclamation_mark:" alt=":heavy_exclamation_mark:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2757.png" height="20" width="20" align="absmiddle"-->
                     </p>
                     <p style="clear: both;">
                 </li>
@@ -228,14 +196,46 @@
                     <p style="float: left; font-size: 12pt; text-align: left; width: 45%; margin-right: 1%; margin-bottom: 0.5em;">
                         <img class="img-responsive center-block" src="./images/VibePML2.gif" width="auto" max-width="120%" alt="Acoustic wave absopted in PML">
                         A spiraling source <i style="color:green"><b>with</b></i> PML; note that outgoing waves are absorbed in the PML near the domain boundaries.
-                        <img class="emoji" title=":thumbsup:" alt=":thumbsup:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png" height="20" width=" 20" align="absmiddle">
-                        <img class="emoji" title=":white_check_mark:" alt=":white_check_mark:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2705.png"    height="20" width="20" align="absmiddle">
+                        <!--img class="emoji" title=":thumbsup:" alt=":thumbsup:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png" height="20" width=" 20" align="absmiddle"-->
+                        <!--img class="emoji" title=":white_check_mark:" alt=":white_check_mark:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2705.png"    height="20" width="20" align="absmiddle"-->
                     </p>
                     <p style="float: left; font-size: 12pt; text-align: left; width: 45%; margin-right: 1%; margin-bottom: 0.5em;">
                         <img class="img-responsive center-block" src="./images/VibeNoPMLComprsn2.gif" width="auto" max-width="120%" alt="Acoustic field contaminated by spurious reflections from boundaries">
                         A spiraling source <i style="color:red"><b>without</b></i> PML; note that the spurious reflections on the domain boundaries contaminated the pressure field.
-                        <img class="emoji" title=":red_circle:" alt=":red_circle:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f534.png" height="20"    width="20" align="absmiddle">
-                        <img class="emoji" title=":heavy_exclamation_mark:" alt=":heavy_exclamation_mark:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2757.png" height="20" width="20" align="absmiddle">
+                        <!--img class="emoji" title=":red_circle:" alt=":red_circle:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f534.png" height="20"    width="20" align="absmiddle"-->
+                        <!--img class="emoji" title=":heavy_exclamation_mark:" alt=":heavy_exclamation_mark:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2757.png" height="20" width="20" align="absmiddle"-->
+                    </p>
+                    <p style="clear: both;">
+                </li>
+                <li id="ICpresCentered">
+                    <h4 style="color:green">Initial pressure point source</h4>
+                    <p style="float: left; font-size: 12pt; text-align: left; width: 45%; margin-right: 1%; margin-bottom: 0.5em;">
+                        <img class="img-responsive center-block" src="./images/PointSource4PML.gif" width="auto" max-width="120%" alt="Acoustic wave absopted in PML">
+                        An initial pressure point source <i style="color: green"><b>with</b></i> PML; note that outgoing waves are absorbed in the PML near the domain boundaries.
+                        <!--img class="emoji" title=":thumbsup:" alt=":thumbsup:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png" height="20" width=" 20" align="absmiddle"-->
+                        <!--img class="emoji" title=":white_check_mark:" alt=":white_check_mark:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2705.png"  height="20" width="20" align="absmiddle"-->
+                    </p>
+                    <p style="float: left; font-size: 12pt; text-align: left; width: 45%; margin-right: 1%; margin-bottom: 0.5em;">
+                        <img class="img-responsive center-block" src="./images/PointSourceNoPMLComprsn.gif" width="auto" max-width="120%" alt="Acoustic field contaminated by spurious reflections from boundaries">
+                        An initial pressure point source <i style="color: red"><b>without</b></i> PML; note that the spurious reflections on the domain boundaries contaminated the pressure field.
+                        <!--img class="emoji" title=":red_circle:" alt=":red_circle:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f534.png" height="20"    width="20" align="absmiddle"-->
+                        <!--img class="emoji" title=":heavy_exclamation_mark:" alt=":heavy_exclamation_mark:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2757.png" height="20" width="20" align="absmiddle"-->
+                    </p>
+                    <p style="clear: both;">
+                </li>
+                <li id="ICpresOffCentered">
+                    <h4 style="color:green">Initial pressure point source, off-centered</h4>
+                    <p style="float: left; font-size: 12pt; text-align: left; width: 45%; margin-right: 1%; margin-bottom: 0.5em;">
+                        <img class="img-responsive center-block" src="./images/PointSource4PML2.gif" width="auto" max-width="120%" alt="Acoustic wave absopted in PML">
+                        An initial pressure point source <i style="color: green"><b>with</b></i> PML; note that outgoing waves are absorbed in the PML near the domain boundaries.
+                        <!--img class="emoji" title=":thumbsup:" alt=":thumbsup:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f44d.png" height="20" width=" 20" align="absmiddle"-->
+                        <!--img class="emoji" title=":white_check_mark:" alt=":white_check_mark:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2705.png"  height="20" width="20" align="absmiddle"-->
+                    </p>
+                    <p style="float: left; font-size: 12pt; text-align: left; width: 45%; margin-right: 1%; margin-bottom: 0.5em;">
+                        <img class="img-responsive center-block" src="./images/PointSourceNoPMLComprsn2.gif" width="auto" max-width="120%" alt="Acoustic field contaminated by spurious reflections from boundaries">
+                        An initial pressure point source <i style="color: red"><b>without</b></i> PML; note that the spurious reflections on the domain boundaries contaminated the pressure field.
+                        <!--img class="emoji" title=":red_circle:" alt=":red_circle:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f534.png" height="20"    width="20" align="absmiddle"-->
+                        <!--img class="emoji" title=":heavy_exclamation_mark:" alt=":heavy_exclamation_mark:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/2757.png" height="20" width="20" align="absmiddle"-->
                     </p>
                     <p style="clear: both;">
                 </li>
